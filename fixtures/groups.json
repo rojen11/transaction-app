@@ -1,0 +1,27 @@
+[
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "manager",
+      "permissions": [
+        ["add_transaction", "transactions", "transaction"],
+        ["change_transaction", "transactions", "transaction"],
+        ["view_transaction", "transactions", "transaction"],
+        ["delete_transaction", "transactions", "transaction"]
+      ]
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+      "name": "staff",
+      "permissions": [
+        ["add_transaction", "transactions", "transaction"],
+        ["change_transaction", "transactions", "transaction"],
+        ["view_transaction", "transactions", "transaction"]
+      ]
+    }
+  }
+]
